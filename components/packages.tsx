@@ -91,10 +91,9 @@ const Packages = () => {
             <h3 className="text-pink-500 text-xl">Beekite</h3>
           </div>
           <p>
-            Mit Beekite werden wir zusammen unsere Ausfahrten sowie Kurse
-            machen. Sie ist eine sehr beliebte Kiteschule mit sehr netten und
-            hervorragenden Lehrern. Ich arbeite schon lange mit Ihnen zusammen
-            und habe bisher auschließliches positives Feedback von meinen
+            Eine sehr beliebte Kiteschule mit super netten, lustigen und hoch
+            qualifizierten Lehrern. Ich arbeite schon lange mit Ihnen zusammen
+            und habe bisher ausschließlich positives Feedback von meinen
             Teilnehmern.
           </p>
         </div>
@@ -104,7 +103,7 @@ const Packages = () => {
             <h3 className="text-pink-500 text-xl">Fitness</h3>
           </div>
           <p>
-            Täglich werde ich euch mit Yoga- und Moblity-Kursen sowie
+            Täglich werde ich euch mit Yoga- und Mobility-Kursen sowie
             Faszientraining versorgen. Ich sorge dafür, dass ihr perfekt für das
             Wasser verbereitet seid und ebenso für die rasche Regeneration
             danach.
@@ -140,7 +139,10 @@ const Packages = () => {
                   <p className="text-5xl font-semibold">{item.price}</p>
                   <EuroIcon size={50} color="white" />
                 </div>
-                <p>zzgl. Unterkunft 189 € im DZ*</p>
+                <div className="text-left">
+                  <p>zzgl. Unterkunft 189 € im DZ*</p>
+                  <p>zzgl. eigene Anreise</p>
+                </div>
                 <div className="my-4">
                   <Booking package_name={item.title} price={item.price} />
                 </div>
