@@ -24,12 +24,14 @@ const Event = () => {
 
       <p className="mt-8 text-center">
         Ich freue mich riesig wieder ein{" "}
-        <span className="text-pink-500 font-bold text-2xl">
+        <span className="text-pink-500 block md:inline font-bold text-2xl">
           Kite-Spirit-Fun Camp
         </span>{" "}
-        am wunerschönen Gardasee in Italien anbieten zu können.
+        am wunderschönen Gardasee in Italien anbieten zu können.
       </p>
-      <p className="text-center">Freue dich auf eine Woche mit:</p>
+      <p className="text-center text-lg mt-8 font-extrabold">
+        Freue dich auf eine Woche mit:
+      </p>
 
       <div className="grid mt-8 md:grid-cols-3 gap-6 items-center   text-center">
         <div className="flex relative h-[300px] items-center justify-center">
