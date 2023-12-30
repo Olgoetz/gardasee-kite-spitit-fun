@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  // openGraph: {
-  //   images: "/opengraph-image.png",
-  // },
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
 };
 
 export default function RootLayout({

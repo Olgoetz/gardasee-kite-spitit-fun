@@ -11,7 +11,7 @@ import Speparator from "@/components/separator";
 import Video from "@/components/video";
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[1500px]">
+    <main className="mx-auto w-full">
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex"></div> */}
       <Hero />
       <Event />
