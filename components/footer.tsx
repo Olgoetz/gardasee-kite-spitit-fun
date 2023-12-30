@@ -71,7 +71,9 @@ export const Footer = () => {
               <Link href="datenschutz">Datenschutz</Link>
             </li>
             <li>
-              <Link href="impressum">Impressum</Link>
+              <Link href="https://www.michaela-suessbauer.de/impressum.html">
+                Impressum
+              </Link>
             </li>
           </ul>
         </div>

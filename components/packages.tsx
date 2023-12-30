@@ -39,7 +39,7 @@ const content = [
   {
     title: "Paket 4",
     description: "täglich Fitness und Shuttleservice ohne Material",
-    extraContent: "Shuttleservice 6 Ausfahrten, Material",
+    extraContent: "Shuttleservice 5 Ausfahrten",
     price: "550",
   },
 ];
