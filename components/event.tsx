@@ -68,8 +68,8 @@ const Event = () => {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 gap-4 mt-16 items-center justify-center">
-        <div className="md:col-span-1 w-full h-full flex flex-col text-center justify-top">
+      <div className="grid md:grid-cols-3 gap-8 w-full mt-16  md:justify-center">
+        <div className="md:col-span-1 w-full h-full flex flex-col text-center justify-between">
           <div className="">
             <h3 className="text-4xl font-extrabold mb-3">Zeitraum</h3>
             <p className="text-2xl">28.06. - 04.07.2024</p>
@@ -95,7 +95,7 @@ const Event = () => {
           </div>
         </div>
         <div className="md:col-span-2">
-          <div className="flex flex-col mt-4 md:mt-0 text-center justify-center">
+          <div className="flex flex-col mt-4 md:mt-0 text-center">
             <h3 className="text-4xl font-extrabold mb-3">Ort</h3>
             <p className="text-2xl mb-4">Torri del Benaco, Gardasee</p>
             <GoogleMaps />

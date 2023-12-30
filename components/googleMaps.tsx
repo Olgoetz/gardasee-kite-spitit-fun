@@ -1,14 +1,24 @@
 import React from "react";
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  InfoWindow,
+  Marker,
+  useJsApiLoader,
+} from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "500px",
+  width: "w-full",
   height: "300px",
 };
 
-const center = {
-  lat: 45.610252380371094,
-  lng: 10.686793327331543,
+const accomodation = {
+  lat: 45.608804842719735,
+  lng: 10.68618426787891,
+};
+
+const beekite = {
+  lat: 45.664826229191085,
+  lng: 10.73049519240483,
 };
 
 const GoogleMaps = () => {
@@ -21,12 +31,20 @@ const GoogleMaps = () => {
   const [map, setMap] = React.useState(null);
 
   return isLoaded ? (
-    <div className="mx-auto">
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={16}>
-        {/* Child components, such as markers, info windows, etc. */}
-        <Marker position={center} />
-      </GoogleMap>
-    </div>
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={accomodation}
+      zoom={16}
+    >
+      {/* Child components, such as markers, info windows, etc. */}
+
+      <Marker
+        position={accomodation}
+        title="Benaco36 - Unterkunft"
+        visible={true}
+        clickable={false}
+      ></Marker>
+    </GoogleMap>
   ) : (
     <></>
   );
