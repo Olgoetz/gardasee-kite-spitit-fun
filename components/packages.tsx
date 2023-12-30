@@ -20,27 +20,27 @@ const content = [
     title: "Paket 1",
     description: "täglich Fitness ohne Kiten",
     extraContent: "",
-    price: "380",
+    price: "330",
   },
   {
     title: "Paket 2",
     description: "täglich Fitness und Kitekurs",
     extraContent:
-      "Kitekurs Praxis mit 6 Ausfahrten, Kitekurs Theorie, Material",
+      "Kitekurs Praxis mit 5 Ausfahrten, Kitekurs Theorie, Material",
 
-    price: "920",
+    price: "825",
   },
   {
     title: "Paket 3",
     description: "täglich Fitness und Shuttelservice mit Material",
-    extraContent: "Shuttleservice 6 Ausfahrten, Material",
-    price: "810",
+    extraContent: "Shuttleservice 5 Ausfahrten, Material",
+    price: "730",
   },
   {
     title: "Paket 4",
     description: "täglich Fitness und Shuttleservice ohne Material",
     extraContent: "Shuttleservice 6 Ausfahrten, Material",
-    price: "570",
+    price: "550",
   },
 ];
 
@@ -78,11 +78,15 @@ const Packages = () => {
           </div>
 
           <p>
-            Unsere Unterkunft ist im idyllischen Torri del Benaco. Ein ein
-            malerisches Dorf am Ostufer des Gardasees in Italien, das für seine
-            charmante Altstadt mit engen Gassen, historischen Gebäuden und einer
-            imposanten Burg bekannt ist. Torri del Benaco gehört zu einem der
-            beliebtesten Orte am Gardasee.
+            Unsere Unterkunft, das{" "}
+            <a className="text-pink-500" href="https://www.benaco36.com/">
+              Benaco36
+            </a>
+            , ist im idyllischen Torri del Benaco. Ein ein malerisches Dorf am
+            Ostufer des Gardasees in Italien, das für seine charmante Altstadt
+            mit engen Gassen, historischen Gebäuden und einer imposanten Burg
+            bekannt ist. Torri del Benaco gehört zu einem der beliebtesten Orte
+            am Gardasee.
           </p>
         </div>
         <div className="border-l-4 p-4 border-pink-500">

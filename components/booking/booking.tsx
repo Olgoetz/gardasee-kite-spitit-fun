@@ -67,7 +67,7 @@ export function Booking({
           Buchungsanfrage
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-md w-[500px]">
+      <DialogContent className="max-w-[500px]">
         <form action={dispatch}>
           <DialogHeader>
             <DialogTitle>

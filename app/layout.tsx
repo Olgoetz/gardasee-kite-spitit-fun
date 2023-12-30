@@ -11,10 +11,19 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Kite Spirt Fun Event am Gardasee",
+  title: "Kite Spirit Fun Event am Gardasee",
   description:
     "Kitesurfen, Yoga und Fitness Event am Gardasee mit Michaela Süßbauer",
   metadataBase: new URL(process.env.URL!),
+  keywords: [
+    "Kitesurfen",
+    "Fitness",
+    "Gardasee",
+    "Yoga",
+    "Kitecamp",
+    "BeeKite",
+  ],
+
   alternates: {
     canonical: "/",
   },

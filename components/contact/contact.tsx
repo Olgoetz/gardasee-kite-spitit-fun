@@ -41,7 +41,7 @@ export default function Contact() {
   }, [state]);
   return (
     <div className="bg-white">
-      <div id="anfrage" className="container p-10 max-w-[1200px]">
+      <div id="anfrage" className="md:p-10 max-w-[1200px]">
         <h2 className="text-xl md:text-3xl uppercase text-pink-500 text-center font-bold my-10 border-b pb-2">
           So erreichst Du mich
         </h2>
@@ -55,7 +55,7 @@ export default function Contact() {
               fill
             />
           </div>
-          <div className="w-full mt-10">
+          <div className="container w-full mt-10">
             <form
               ref={formRef}
               action={dispatch}

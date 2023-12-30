@@ -52,11 +52,11 @@ const program: ProgramPoint[] = [
 const Program = () => {
   return (
     <div className="bg-black text-white">
-      <div id="programm" className="container max-w-[1400px] p-20">
+      <div id="programm" className="container max-w-[1400px] py-20">
         <h2 className="text-2xl md:text-5xl uppercase font-bold text-pink-500 mb-10 border-b pb-2 text-center">
           Programm
         </h2>
-        <p className="p-6 text-center text-lg">
+        <p className="p-4 text-center text-lg">
           Ich habe für euch ein wunderschönes Programm zusammen gestellt,
           welches viel Abwechslung bietet und Spaß garantiert.
         </p>

@@ -56,7 +56,7 @@ const Navbar = () => {
     <div className="w-full text-white">
       <div
         className={cn(
-          "hidden md:flex z-[1000] fixed top-0 px-8 left-0 transition ease-in-out delay-150 w-full h-[70px]  items-center justify-between",
+          "hidden xl:bg-black md:flex z-[1000] fixed top-0 px-8 left-0 transition ease-in-out delay-150 w-full h-[70px]  items-center justify-between",
           navcolor
         )}
       >
@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* MOBILE MENU */}
-      <div className="md:hidden  p-3 absolute top-0 right-0 float-right  text-white cursor-pointer z-50">
+      <div className="md:hidden p-3 absolute top-0 right-0 float-right  text-white cursor-pointer z-50">
         {navbar ? (
           <RxCross1 onClick={() => setNavbar(!navbar)} size={25} />
         ) : (
@@ -104,8 +104,8 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="flex flex-1 flex-col justify-between items-stretch">
-            <ul className="flex flex-col space-y-10 ml-5 h-full justify-center">
+          <div className="flex mt-10 flex-col ">
+            <ul className="flex flex-col space-y-8 ml-5 h-full justify-center">
               {links.map((l) => (
                 <Link
                   onClick={() => setNavbar(!navbar)}

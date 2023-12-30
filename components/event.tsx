@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useSpring, animated } from "@react-spring/web";
 import GoogleMaps from "./googleMaps";
+import Link from "next/link";
 const Event = () => {
   const springs = useSpring({
     from: { x: -200 },
@@ -21,8 +22,51 @@ const Event = () => {
         Event
       </h1>
 
-      <p className="my-8 text-center">Hier kommt noch ein schöner Text hiin</p>
-      <div className="grid md:grid-cols-3 gap-4 mt-10 items-center justify-center">
+      <p className="mt-8 text-center">
+        Ich freue mich riesig wieder ein{" "}
+        <span className="text-pink-500 font-bold text-2xl">
+          Kite-Spirit-Fun Camp
+        </span>{" "}
+        am wunerschönen Gardasee in Italien anbieten zu können.
+      </p>
+      <p className="text-center">Freue dich auf eine Woche mit:</p>
+
+      <div className="grid mt-8 md:grid-cols-3 gap-6 items-center   text-center">
+        <div className="flex relative h-[300px] items-center justify-center">
+          <Image
+            src="/kite.png"
+            alt="Kitesurfen Gardasee"
+            fill
+            className="object-cover -z-10 rounded-lg"
+          />
+          <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
+            Kite
+          </p>
+        </div>
+        <div className="flex relative h-[300px] items-center justify-center">
+          <Image
+            src="/fitness.jpg"
+            alt="Fitness Gardasee"
+            fill
+            className="object-cover -z-10 rounded-lg"
+          />
+          <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
+            Fitness
+          </p>
+        </div>
+        <div className="flex relative h-[300px] items-center justify-center">
+          <Image
+            src="/fun.png"
+            alt="Spaß Gardasee"
+            fill
+            className="object-cover -z-10 rounded-lg"
+          />
+          <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
+            Fun
+          </p>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-3 gap-4 mt-16 items-center justify-center">
         <div className="md:col-span-1 w-full h-full flex flex-col text-center justify-top">
           <div className="">
             <h3 className="text-4xl font-extrabold mb-3">Zeitraum</h3>
@@ -30,13 +74,22 @@ const Event = () => {
           </div>
           <div className="mt-10">
             <h3 className="text-4xl font-extrabold mb-3">Preis</h3>
-            <p className="text-2xl">ab 380 EUR plus Unterkunft</p>
+            <p className="text-2xl">ab 330 EUR plus Unterkunft</p>
           </div>
           <div className="mt-10">
             <h3 className="text-4xl font-extrabold mb-3">Kiteschule</h3>
-            <p className="text-2xl text-pink-500">
-              <a href="https://www.beekite.it/de/">BeeKite</a>
-            </p>
+
+            <div className="bg-black flex justify-center">
+              <Link href="https://www.beekite.it/de/">
+                <Image
+                  src="/beekite_logo.png"
+                  alt="Beekite"
+                  width={250}
+                  height={100}
+                  color="black"
+                />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="md:col-span-2">
