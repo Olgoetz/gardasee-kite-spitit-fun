@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
+import ScrollToTopButton from "@/components/scrollToTopButton";
 const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Toaster />
+        <ScrollToTopButton />
       </body>
     </html>
   );
