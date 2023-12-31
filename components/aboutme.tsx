@@ -18,18 +18,18 @@ const Aboutme = () => {
             Lächeln…
           </p>
           <p className="leading-8 mt-4">
-            das sind die Worte mit denen man mich meine Kunden und Teilnehmer
+            das sind die Worte mit denen mich meine Kunden und Teilnehmer
             beschreiben. Vor über 20 Jahren hing ich meinen Job als
-            Industriekauffrau an den Nagel, um meiner Passion für Sport & Tanz
-            zum Beruf zu machen. Mein Leitsatz: Meinen Teilnehmern den Spaß an
-            der Bewegung zu vermitteln und somit Ihr Leben zu verbessern. Zudem
-            habe ich es mir zum Ziel gesetzt, Menschen zu Sportarten oder
-            grundsätzlich Dingen zu motivieren, die sie sich selbst vielleicht
-            nie zugetraut hätten. Genau aus diesem Grund organisiere ich diese
-            Camps... &quot;we are better together&quot; gemeinsam macht es
-            einfach mehr Freude und wir geben uns alle gegenseitig die
-            Motivation und den Spaß in so einer Woche. Bekannt sind diese Wochen
-            auch als &quot;life-changing&quot; Camps. Ich selbst bin seit Jahren
+            Industriekauffrau an den Nagel, um meine Passion Sport & Tanz zum
+            Beruf zu machen. Mein Leitsatz: Meinen Teilnehmern den Spaß an der
+            Bewegung zu vermitteln und somit Ihr Leben zu verbessern. Zudem habe
+            ich es mir zum Ziel gesetzt, Menschen zu Sportarten oder Aktivitäten
+            zu motivieren, die sie sich selbst vielleicht nie zugetraut hätten.
+            Genau aus diesem Grund liebe ich es diese Camps zu organisieren
+            &quot;we are better in a Team&quot; gemeinsam macht es einfach mehr
+            Freude und alle geben sich gegenseitig die Motivation und den Spaß
+            in so einer Woche. Viele meiner Teilnehmer beschreiben es auch als
+            &quot;life-changing&quot; Camps. Ich selbst bin seit Jahren
             leidenschaftliche Kiterin und freue mich, wenn ich das mit vielen
             teilen kann. Anfänger und Fortgeschrittene sind herzlich willkommen.
             Ich und auch Beekite freuen sich auf DICH.

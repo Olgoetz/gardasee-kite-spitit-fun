@@ -59,7 +59,7 @@ export default function Contact() {
             <form
               ref={formRef}
               action={dispatch}
-              className=" grid grid-cols-1 md:grid-cols-2 gap-3 "
+              className="grid grid-cols-1 md:grid-cols-2 gap-3 "
             >
               <div className="flex flex-col justify-start space-y-3">
                 <Label htmlFor="name">Name</Label>
@@ -71,10 +71,7 @@ export default function Contact() {
                 />
                 {state.errors?.name &&
                   state.errors.name.map((error: string) => (
-                    <p
-                      className="mt-2 col-span-4 text-sm text-red-500"
-                      key={error}
-                    >
+                    <p className="mt-2 text-sm text-red-500" key={error}>
                       {error}
                     </p>
                   ))}
@@ -89,16 +86,13 @@ export default function Contact() {
                 />
                 {state.errors?.email &&
                   state.errors.email.map((error: string) => (
-                    <p
-                      className="mt-2 col-span-4 text-sm text-red-500"
-                      key={error}
-                    >
+                    <p className="mt-2 text-sm text-red-500" key={error}>
                       {error}
                     </p>
                   ))}
               </div>
 
-              <div className="flex flex-col justify-start col-span-2 space-y-3">
+              <div className="flex flex-col justify-start md:col-span-2 space-y-3">
                 <Label htmlFor="message">Nachricht</Label>
                 <Textarea
                   minLength={1}
@@ -109,10 +103,7 @@ export default function Contact() {
                 />
                 {state.errors?.message &&
                   state.errors.message.map((error: string) => (
-                    <p
-                      className="mt-2 col-span-4 text-sm text-red-500"
-                      key={error}
-                    >
+                    <p className="mt-2 text-sm text-red-500" key={error}>
                       {error}
                     </p>
                   ))}

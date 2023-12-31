@@ -95,10 +95,15 @@ const Packages = () => {
             <h3 className="text-pink-500 text-xl">Beekite</h3>
           </div>
           <p>
-            Eine sehr beliebte Kiteschule, nur 10 Minuten von unserer Unterkunft
-            entfernt, mit super netten, lustigen und hoch qualifizierten
-            Lehrern. Ich arbeite schon lange mit Ihnen zusammen und habe bisher
-            ausschließlich positives Feedback von meinen Teilnehmern.
+            Die sehr bliebte Kiteschule{" "}
+            <a className="text-pink-500" href="https://www.beekite.it/de/">
+              BeeKite
+            </a>{" "}
+            ist, nur 10 Fahrminuten mit dem Auto von unserer Unterkunft
+            entfernt. Das Team besteht aus super netten, lustigen und hoch
+            qualifizierten Lehrern. Ich arbeite schon lange mit Ihnen zusammen
+            und habe bisher ausschließlich positives Feedback von meinen
+            Teilnehmern.
           </p>
         </div>
         <div className="border-l-4 p-4 border-pink-500">
