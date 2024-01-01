@@ -57,7 +57,7 @@ const Program = () => {
           Programm
         </h2>
         <p className="p-4 text-center text-lg">
-          Ich habe für euch ein wunderschönes Programm zusammen gestellt,
+          Ich habe für euch ein tolles Programm zusammen gestellt,
           welches viel Abwechslung bietet und Spaß garantiert.
         </p>
         <div className="grid md:grid-cols-3 gap-4 items-center justify-between">

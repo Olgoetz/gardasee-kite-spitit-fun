@@ -114,7 +114,7 @@ const Packages = () => {
           <p>
             Täglich werde ich euch mit Yoga- und Mobility-Kursen sowie
             Faszientraining versorgen. Ich sorge dafür, dass ihr perfekt für das
-            Wasser verbereitet seid und ebenso für die rasche Regeneration
+            Wasser vorbereitet seid und ebenso für die rasche Regeneration
             danach. Die Kurse finden entweder vormittags oder nachmittags statt,
             je nach Windvorhersage.
           </p>
