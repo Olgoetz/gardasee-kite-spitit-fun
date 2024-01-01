@@ -31,8 +31,8 @@ export const Footer = () => {
           <ul className="space-y-5 text-sm">
             <li className="flex items-center justify-center">
               <Mail size={24} className="mr-5" />
-              <a href="mailto:info@michaela-suessbauer.de">
-                info@michaela-suessbauer.de
+              <a href="mailto:events@michaela-suessbauer.de">
+                events@michaela-suessbauer.de
               </a>
             </li>
             <li>

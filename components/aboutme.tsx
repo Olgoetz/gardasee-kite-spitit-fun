@@ -3,10 +3,10 @@ import React from "react";
 
 const Aboutme = () => {
   return (
-    <div className="py-20 mt-20  bg-black text-white">
+    <div className="mt-20  bg-black text-white">
       <h2
         id="uebermich"
-        className="text-center font-bold text-xl md:text-5xl uppercase border-b pb-2 text-pink-500"
+        className="py-20 text-center font-bold text-xl md:text-5xl uppercase border-b pb-2 text-pink-500"
       >
         Über mich
       </h2>
