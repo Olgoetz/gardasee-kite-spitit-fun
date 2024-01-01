@@ -32,7 +32,7 @@ const Event = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: [0, 100, 0] }}
-          className="flex relative h-[300px] items-center justify-center"
+          className="flex relative h-[400px] items-center justify-center"
         >
           <Image
             src="/kite.png"
@@ -48,7 +48,7 @@ const Event = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: [0, 100, 0] }}
-          className="flex relative h-[300px] items-center justify-center"
+          className="flex relative h-[400px] items-center justify-center"
         >
           <Image
             src="/fitness.jpg"
@@ -63,7 +63,7 @@ const Event = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: [0, 100, 0] }}
-          className="flex relative h-[300px] items-center justify-center"
+          className="flex relative h-[400px] items-center justify-center"
         >
           <Image
             src="/fun.png"
