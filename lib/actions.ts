@@ -71,6 +71,7 @@ const GeneralFormSchema = z.object({
     .string()
     .email({ message: "Bitte gib eine gültige Email-Adresse an." }),
   message: z.string().min(1, { message: "Nachricht darf nicht leer sein." }),
+  category: z.string().min(1, { message: "Bitte Kategorie wählen." }),
 });
 
 const GeneralInquiry = GeneralFormSchema;
@@ -83,6 +84,7 @@ export async function sendGeneralInquiry(
     name: formData.get("name"),
     email: formData.get("email"),
     message: formData.get("message"),
+    category: formData.get("category"),
   });
 
   if (!validatedFields.success) {

@@ -1,17 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useSpring, animated } from "@react-spring/web";
+import { motion } from "framer-motion";
 import GoogleMaps from "./googleMaps";
 import Link from "next/link";
 const Event = () => {
-  const springs = useSpring({
-    from: { x: -200 },
-    to: { x: 0 },
-  });
-
   return (
-    <animated.div
+    <div
       className="container max-w-[1400px] my-20"
       //   style={{ ...springs }}
     >
@@ -34,18 +29,27 @@ const Event = () => {
       </p>
 
       <div className="grid mt-8 md:grid-cols-3 gap-6 items-center   text-center">
-        <div className="flex relative h-[300px] items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: [0, 100, 0] }}
+          className="flex relative h-[300px] items-center justify-center"
+        >
           <Image
             src="/kite.png"
             alt="Kitesurfen Gardasee"
             fill
             className="object-cover -z-10 rounded-lg"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
             Kite
           </p>
-        </div>
-        <div className="flex relative h-[300px] items-center justify-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: [0, 100, 0] }}
+          className="flex relative h-[300px] items-center justify-center"
+        >
           <Image
             src="/fitness.jpg"
             alt="Fitness Gardasee"
@@ -55,8 +59,12 @@ const Event = () => {
           <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
             Fitness
           </p>
-        </div>
-        <div className="flex relative h-[300px] items-center justify-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: [0, 100, 0] }}
+          className="flex relative h-[300px] items-center justify-center"
+        >
           <Image
             src="/fun.png"
             alt="Spaß Gardasee"
@@ -66,7 +74,7 @@ const Event = () => {
           <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
             Fun
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="grid md:grid-cols-3 gap-8 w-full mt-16  md:justify-center">
         <div className="md:col-span-1 w-full h-full flex flex-col text-center justify-between">
@@ -102,7 +110,7 @@ const Event = () => {
           </div>
         </div>
       </div>
-    </animated.div>
+    </div>
   );
 };
 

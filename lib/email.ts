@@ -17,7 +17,7 @@ export async function sendBookingInquiryViaMail(
   try {
     const { data, error } = await resend.emails.send({
       from: `Kite-Spirit-Fun Camp 2024 <${process.env.RESEND_FROM_EMAIL}>`,
-      to: [process.env.RESEND_TO_EMAIL as string],
+      to: [process.env.RESEND_TO_EMAIL_BOOKING as string],
       subject: `Neue Buchungsanfrage von ${name}`,
       react: BookingEmailTemplate({
         name,
@@ -42,19 +42,26 @@ interface GeneralInquiryProps {
   name: string;
   email: string;
   message: string;
+  category: string;
 }
 
 export async function sendGeneralInquiryViaMail(
   emailProps: GeneralInquiryProps
 ) {
-  const { name, email, message } = emailProps;
+  const { name, email, message, category } = emailProps;
+  console.log(emailProps);
   try {
+    let recipientEmail = process.env.RESEND_TO_EMAIL_EVENT;
+    if (category === "Kite allgemein") {
+      recipientEmail = process.env.RESEND_TO_EMAIL_BOOKING;
+    }
     const { data, error } = await resend.emails.send({
       from: `Kite-Spirit-Fun Camp 2024 <${process.env.RESEND_FROM_EMAIL}>`,
-      to: [process.env.RESEND_TO_EMAIL as string],
+      to: [recipientEmail as string],
       subject: `Neue allgemeine Anfrage von ${name}`,
       react: GeneralInquiryEmailTemplate({
         name,
+        category,
         email,
         message,
       }) as React.ReactElement,
