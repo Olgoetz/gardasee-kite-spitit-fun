@@ -68,7 +68,9 @@ export const Footer = () => {
           </p>
           <ul className="space-y-3 text-center">
             <li>
-              <Link href="datenschutz">Datenschutz</Link>
+              <Link href="https://www.michaela-suessbauer.de/datenschutz.html">
+                Datenschutz
+              </Link>
             </li>
             <li>
               <Link href="https://www.michaela-suessbauer.de/impressum.html">
