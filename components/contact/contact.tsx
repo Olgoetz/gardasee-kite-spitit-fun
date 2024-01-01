@@ -13,6 +13,15 @@ import { Textarea } from "../ui/textarea";
 import { sendGeneralInquiry } from "@/lib/actions";
 import { useToast } from "../ui/use-toast";
 import { useEffect, useRef } from "react";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select";
 
 function Submit() {
   const { pending } = useFormStatus();
@@ -53,6 +62,7 @@ export default function Contact() {
               alt="Kitesurfen Gardasee"
               className="object-cover object-center"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <div className="container w-full mt-10">
@@ -91,7 +101,31 @@ export default function Contact() {
                     </p>
                   ))}
               </div>
-
+              <div className="space-y-3">
+                <Label htmlFor="message">Kategorie</Label>
+                <Select name="category">
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Kategorie wählen" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectLabel>Kategorie</SelectLabel>
+                      <SelectItem value="Kite allgemein">
+                        Kite allgemein
+                      </SelectItem>
+                      <SelectItem value="Event allgemein">
+                        Event allgemein
+                      </SelectItem>
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+                {state.errors?.category &&
+                  state.errors.category.map((error: string) => (
+                    <p className="text-sm text-red-500" key={error}>
+                      {error}
+                    </p>
+                  ))}
+              </div>
               <div className="flex flex-col justify-start md:col-span-2 space-y-3">
                 <Label htmlFor="message">Nachricht</Label>
                 <Textarea

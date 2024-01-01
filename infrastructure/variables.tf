@@ -10,7 +10,10 @@ variable "RESEND_API_KEY" {
 variable "RESEND_FROM_EMAIL" {
   type = string
 }
-variable "RESEND_TO_EMAIL" {
+variable "RESEND_TO_EMAIL_BOOKING" {
+  type = string
+}
+variable "RESEND_TO_EMAIL_EVENT" {
   type = string
 }
 variable "URL" {
