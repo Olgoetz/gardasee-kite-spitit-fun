@@ -82,7 +82,7 @@ const Packages = () => {
             <a className="text-pink-500" href="https://www.benaco36.com/">
               Benaco36
             </a>
-            , ist im idyllischen Torri del Benaco. Ein ein malerisches Dorf am
+            , ist im idyllischen Torri del Benaco. Ein malerisches Dorf am
             Ostufer des Gardasees in Italien, das für seine charmante Altstadt
             mit engen Gassen, historischen Gebäuden und einer imposanten Burg
             bekannt ist. Torri del Benaco gehört zu einem der beliebtesten Orte
@@ -95,7 +95,7 @@ const Packages = () => {
             <h3 className="text-pink-500 text-xl">Beekite</h3>
           </div>
           <p>
-            Die sehr bliebte Kiteschule{" "}
+            Die sehr beliebte Kiteschule{" "}
             <a className="text-pink-500" href="https://www.beekite.it/de/">
               BeeKite
             </a>{" "}
