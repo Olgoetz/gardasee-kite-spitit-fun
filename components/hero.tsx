@@ -19,10 +19,10 @@ const Hero = () => {
         </div>
         <div className="absolute mt-20 h-[300px] z-20 top-28 left-10 right-10 text-white p-8  space-y-3 text-center">
           <h1 className="text-3xl md:text-5xl font-bold">
-            <span className="text-white">Kite-Spirit-Fun Camp</span> am
-            wunderschönen Gardasee
+            <span className="text-white">Kite-Spirit-Fun Camp</span> in der
+            traumhaften SomaBay in Ägypten
           </h1>
-          <p className="text-xl md:text-3xl">28.06. - 04.07.2024</p>
+          <p className="text-xl md:text-3xl">xx.05. - xx.05.2025</p>
           <Button className="text-xl md:text-2xl bg-pink-500  p-10 h-[80px]">
             <Link href="#pakete" className="cursor-pointer">
               Buche jetzt deinen Platz

@@ -36,7 +36,7 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <div className="grid md:grid-cols-2 gap-3 justify-center">
+              <div className="grid md:grid-cols-1 gap-3 items-center justify-center">
                 <div className="mx-auto">
                   <Link href="https://www.michaela-suessbauer.de">
                     <Image
@@ -47,7 +47,7 @@ export const Footer = () => {
                     />
                   </Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link href="https://www.beekite.it/de/">
                     <Image
                       src="/beekite_logo.png"
@@ -56,7 +56,7 @@ export const Footer = () => {
                       height={100}
                     />
                   </Link>
-                </div>
+                </div> */}
               </div>
             </li>
           </ul>

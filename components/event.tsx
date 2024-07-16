@@ -22,7 +22,7 @@ const Event = () => {
         <span className="text-pink-500 block md:inline font-bold text-2xl">
           Kite-Spirit-Fun Camp
         </span>{" "}
-        am wunderschönen Gardasee in Italien anbieten zu können.
+        in der traumhaften Soma Bay in Ägypten anbieten zu können.
       </p>
       <p className="text-center text-lg mt-8 font-extrabold">
         Freue dich auf eine Woche mit:
@@ -76,38 +76,38 @@ const Event = () => {
           </p>
         </motion.div>
       </div>
-      <div className="grid md:grid-cols-3 gap-8 w-full mt-16  md:justify-center">
+      <div className="grid md:grid-cols-3 gap-8 w-full mt-16 h-[400px] md:justify-center">
         <div className="md:col-span-1 w-full h-full flex flex-col text-center justify-between">
           <div className="">
             <h3 className="text-4xl font-extrabold mb-3">Zeitraum</h3>
-            <p className="text-2xl">28.06. - 04.07.2024</p>
+            <p className="text-2xl">xx.05. - xx.05.2025</p>
           </div>
-          <div className="mt-10">
+          <div className="">
             <h3 className="text-4xl font-extrabold mb-3">Preis</h3>
-            <p className="text-2xl">ab 330 EUR plus Unterkunft</p>
+            <p className="text-2xl">ab XXX EUR plus Unterkunft</p>
           </div>
-          <div className="mt-10">
+          <div>
             <h3 className="text-4xl font-extrabold mb-3">Kiteschule</h3>
-
-            <div className="bg-black flex justify-center">
-              <Link href="https://www.beekite.it/de/">
-                <Image
-                  src="/beekite_logo.png"
-                  alt="Beekite"
-                  width={250}
-                  height={100}
-                  color="black"
-                />
-              </Link>
-            </div>
+            <p>7 Bft KiteHouse Soma Bay</p>
           </div>
         </div>
-        <div className="md:col-span-2">
-          <div className="flex flex-col mt-4 md:mt-0 text-center">
-            <h3 className="text-4xl font-extrabold mb-3">Ort</h3>
-            <p className="text-2xl mb-4">Torri del Benaco, Gardasee</p>
-            <GoogleMaps />
+        <div className="md:col-span-2 flex flex-col items-center">
+          <div className="bg-black w-full h-full relative overflow-hidden flex justify-center">
+            <Link href="https://kitehouse-somabay.com/">
+              <Image
+                src="https://kitehouse-somabay.com/UP1/wp-content/uploads/A-dream-come-true.jpg"
+                alt="Kitehouse Soma Bay"
+                fill
+                className="object-cover "
+                color="white"
+              />
+            </Link>
           </div>
+          {/* <div className="flex flex-col mt-4 md:mt-0 text-center">
+            <h3 className="text-4xl font-extrabold mb-3">Ort</h3>
+            <p className="text-2xl mb-4">Soma Bay, Ägypten</p>
+             <GoogleMaps /> 
+          </div> */}
         </div>
       </div>
     </div>

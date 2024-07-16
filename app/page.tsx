@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Event />
 
-      <Video />
+      {/* <Video /> */}
       <Program />
       <Speparator imageSrc="/gardasee_1.jpg" alt="Gardasee Yoga" />
       <Packages />

@@ -3,7 +3,7 @@ resource "vercel_project" "this" {
   name      = github_repository.this.name
   framework = "nextjs"
 
-
+  preview_comments           = false
   serverless_function_region = "fra1"
   git_repository = {
     type              = "github"
