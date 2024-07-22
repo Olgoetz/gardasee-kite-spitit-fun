@@ -28,7 +28,8 @@ type ProgramPoint = {
 
 const program: ProgramPoint[] = [
   {
-    text: "Täglich Kitekurse für Anfänger und Fortgeschrittene*",
+    text: `Täglich Kitekurse für Anfänger und Fortgeschrittene*\n
+    Wir rechnen nicht damit, aber falls es passieren sollte - einzigartige No Wind Solutions`,
     icon: MdKitesurfing,
   },
   {
@@ -68,15 +69,15 @@ const Program = () => {
           {program.map((el) => (
             <Card
               key={el.text}
-              className="text-center h-[200px] bg-black text-white  border-white items-center"
+              className="text-center h-full bg-black text-white  border-white items-center"
             >
               <CardHeader className="items-center">
                 <el.icon size={48} color="white" />
                 {/* <CardTitle> </CardTitle> */}
                 {/* <CardDescription>Card Description</CardDescription> */}
               </CardHeader>
-              <CardContent>
-                <p className="">{el.text}</p>
+              <CardContent className="">
+                <p className="whitespace-pre-line">{el.text}</p>
               </CardContent>
             </Card>
           ))}
