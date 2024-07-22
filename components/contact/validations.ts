@@ -7,9 +7,7 @@ export const contactFormSchema = z.object({
     .string()
     .email({ message: "Bitte gib eine gültige Email-Adresse an" }),
 
-  message: z
-    .string()
-    .min(10, {
-      message: "Bitte gib eine Nachricht mit mindestens 10 Zeichen an",
-    }),
+  message: z.string().min(10, {
+    message: "Bitte gib eine Nachricht mit mindestens 10 Zeichen an",
+  }),
 });

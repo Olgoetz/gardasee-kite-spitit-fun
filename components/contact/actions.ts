@@ -4,7 +4,7 @@ import z from "zod";
 import { createServerAction } from "zsa";
 
 import { contactFormSchema } from "./validations";
-export const produceNewMessage = createServerAction()
+export const sendContactMessage = createServerAction()
   .input(contactFormSchema, {
     type: "formData",
   })

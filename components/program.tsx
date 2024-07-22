@@ -32,23 +32,23 @@ const program: ProgramPoint[] = [
     icon: MdKitesurfing,
   },
   {
-    text: "Faszientraining zur Regeneration und Mobility-Sessions zur Vorbereitungs auf's Wasser",
+    text: "Yoga, Mobility und Faszientraining zur Regeneration sowie zur optimalen Vorbereitung auf´s Wasser",
     icon: AiFillHeart,
   },
   {
-    text: "Workouts zur Kräfigung und Stabilisierung",
+    text: "Highlights: DAYO, Dance & Workout Specials",
     icon: IoFitnessSharp,
   },
   {
-    text: "Morning und Sunset Yoga sowie DAYO",
+    text: "Sunrise Yoga am Strand sowie Sundowner Yoga auf der Dachterasse",
     icon: TbYoga,
   },
   {
-    text: "Sunset Tour*",
+    text: "Atemberaubende Sunsettour mit DJ, kühlen Drinks und jeder Menge Spaß*",
     icon: MdBreakfastDining,
   },
   {
-    text: "Bedouin Dinner*",
+    text: "Bedouin Dinner direkt am Strand - geniesse bestes traditionelles Essen in einer wundervollen Atmosphäre wie in 1001 Nacht*",
     icon: MdDinnerDining,
   },
 ];
