@@ -183,7 +183,7 @@ const Packages = () => {
           </div>
         </Card>
 
-        <Card className="flex flex-col h-full md:scale-110">
+        <Card className="flex flex-col h-full  md:scale-110">
           <CardHeader className="relative">
             <CardTitle className=" text-3xl">Super Early Bird</CardTitle>
             <p className="absolute -top-3 -right-4 rotate-12 text-2xl bg-pink-500 m-2 p-1 rounded-lg font-extrabold text-center text-white">

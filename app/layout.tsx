@@ -3,8 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Footer } from "@/components/footer";
-import { Toaster } from "@/components/ui/toaster";
+
 import ScrollToTopButton from "@/components/scrollToTopButton";
+import { Toaster } from "@/components/ui/sonner";
 const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
@@ -12,9 +13,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Kite Spirit Fun Event am Gardasee",
+  title: "Kite Spirit Fun Event in Soma Bay, Ägypten",
   description:
-    "Kitesurfen, Yoga und Fitness Event am Gardasee mit Michaela Süßbauer",
+    "Kitesurfen, Yoga und Fitness Event in Soma Bay mit Michaela Süßbauer",
   metadataBase: new URL(process.env.URL!),
   keywords: [
     "Kitesurfen",
@@ -22,7 +23,9 @@ export const metadata: Metadata = {
     "Gardasee",
     "Yoga",
     "Kitecamp",
-    "BeeKite",
+    "The Breakers",
+    "Soma Bay",
+    "Michaela Süßbauer",
   ],
 
   alternates: {
@@ -46,6 +49,7 @@ export default function RootLayout({
         <Footer />
         <Toaster />
         <ScrollToTopButton />
+        <Toaster />
       </body>
     </html>
   );
