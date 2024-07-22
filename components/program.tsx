@@ -14,7 +14,11 @@ import { AiFillHeart } from "react-icons/ai";
 import { TbYoga } from "react-icons/tb";
 import { IoFitnessSharp } from "react-icons/io5";
 import { FaPizzaSlice } from "react-icons/fa6";
-import { MdBreakfastDining, MdKitesurfing } from "react-icons/md";
+import {
+  MdBreakfastDining,
+  MdDinnerDining,
+  MdKitesurfing,
+} from "react-icons/md";
 import { LucideIcon } from "lucide-react";
 
 type ProgramPoint = {
@@ -24,7 +28,7 @@ type ProgramPoint = {
 
 const program: ProgramPoint[] = [
   {
-    text: "Täglich Kitekurse für Anfänger und Fortgeschrittene sowie Ausfahrten",
+    text: "Täglich Kitekurse für Anfänger und Fortgeschrittene*",
     icon: MdKitesurfing,
   },
   {
@@ -40,12 +44,12 @@ const program: ProgramPoint[] = [
     icon: TbYoga,
   },
   {
-    text: "Gemeinsames Frühstück und Abendessen",
+    text: "Sunset Tour*",
     icon: MdBreakfastDining,
   },
   {
-    text: "Pizza Abend in Torri",
-    icon: FaPizzaSlice,
+    text: "Bedounin Dinner*",
+    icon: MdDinnerDining,
   },
 ];
 
@@ -57,8 +61,8 @@ const Program = () => {
           Programm
         </h2>
         <p className="p-4 text-center text-lg">
-          Ich habe für euch ein tolles Programm zusammen gestellt,
-          welches viel Abwechslung bietet und Spaß garantiert.
+          Ich habe für euch ein tolles Programm zusammen gestellt, welches viel
+          Abwechslung bietet und Spaß garantiert
         </p>
         <div className="grid md:grid-cols-3 gap-4 items-center justify-between">
           {program.map((el) => (
@@ -77,6 +81,7 @@ const Program = () => {
             </Card>
           ))}
         </div>
+        <p className="text-sm my-2">*entgeltlich</p>
       </div>
     </div>
   );

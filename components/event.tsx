@@ -80,11 +80,13 @@ const Event = () => {
         <div className="md:col-span-1 w-full h-full flex flex-col text-center justify-between">
           <div className="">
             <h3 className="text-4xl font-extrabold mb-3">Zeitraum</h3>
-            <p className="text-2xl">xx.05. - xx.05.2025</p>
+            <p className="text-2xl">17.05. - 24.05.2025</p>
           </div>
           <div className="">
             <h3 className="text-4xl font-extrabold mb-3">Preis</h3>
-            <p className="text-2xl">ab XXX EUR plus Unterkunft</p>
+            <p className="text-2xl">
+              ab 923 EUR plus Anreise und Geräteverleih
+            </p>
           </div>
           <div>
             <h3 className="text-4xl font-extrabold mb-3">Kiteschule</h3>
