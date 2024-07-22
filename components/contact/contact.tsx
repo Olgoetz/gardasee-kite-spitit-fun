@@ -60,7 +60,7 @@ export default function Contact() {
             <Image
               src="/gardasee_action.jpg"
               alt="Kitesurfen Gardasee"
-              className="object-cover object-center"
+              className="object-cover object-center rounded-lg"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
             />

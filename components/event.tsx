@@ -79,17 +79,23 @@ const Event = () => {
       <div className="grid md:grid-cols-3 gap-8 w-full mt-16 h-[400px] md:justify-center">
         <div className="md:col-span-1 w-full p-4 h-full flex flex-col bg-slate-50 rounded-lg text-center justify-between">
           <div className="">
-            <h3 className="text-4xl font-extrabold mb-3">Zeitraum</h3>
+            <h3 className="text-4xl text-pink-500 font-extrabold mb-3">
+              Zeitraum
+            </h3>
             <p className="text-2xl">17.05. - 24.05.2025</p>
           </div>
           <div className="">
-            <h3 className="text-4xl font-extrabold mb-3">Preis</h3>
+            <h3 className="text-4xl text-pink-500 font-extrabold mb-3">
+              Preis
+            </h3>
             <p className="text-2xl">
               ab 923 EUR plus Anreise und Geräteverleih
             </p>
           </div>
           <div>
-            <h3 className="text-4xl font-extrabold mb-3">Kiteschule</h3>
+            <h3 className="text-4xl text-pink-500 font-extrabold mb-3">
+              Kiteschule
+            </h3>
             <p>7 Bft KiteHouse Soma Bay</p>
           </div>
         </div>

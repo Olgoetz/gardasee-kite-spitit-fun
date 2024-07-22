@@ -97,7 +97,7 @@ const Packages = () => {
         <div className="border-l-4 p-4 border-pink-500">
           <div className="flex items-center mb-2">
             <MdKitesurfing size={24} className="text-pink-500 mr-4" />
-            <h3 className="text-pink-500 text-xl">Beekite</h3>
+            <h3 className="text-pink-500 text-xl">7Bft Kitehouse</h3>
           </div>
           <p>
             Die sehr beliebte Kiteschule{" "}
@@ -105,13 +105,15 @@ const Packages = () => {
               className="text-pink-500"
               href="https://kitehouse-somabay.com/de/"
             >
-              7BFT Kitehouse
+              7Bft Kitehouse
             </a>{" "}
             ist nur 10 Fahrminuten mit dem Shuttle von unserer Unterkunft
             entfernt. Das Team besteht aus super netten, lustigen und hoch
-            qualifizierten Lehrern. Ich arbeite schon lange mit Ihnen zusammen
-            und habe bisher ausschließlich positives Feedback von meinen
-            Teilnehmern.
+            qualifizierten Lehrern und sehr hilfsbereiten Beachboys die immer
+            auf Euch schauen. Ich komme seit vielen Jahren an diese Station und
+            fühle mich immer wohl. Für alle geübten Kiter gibt es mehrmals
+            täglich die Option auf einen Downwinder zu einer wunderschönen Insel
+            mit karibischem Flair.
           </p>
         </div>
         <div className="border-l-4 p-4 border-pink-500">
@@ -120,11 +122,12 @@ const Packages = () => {
             <h3 className="text-pink-500 text-xl">Fitness</h3>
           </div>
           <p>
-            Täglich werde ich euch mit Yoga- und Mobility-Kursen sowie
-            Faszientraining versorgen. Ich sorge dafür, dass ihr perfekt für das
-            Wasser vorbereitet seid und ebenso für die rasche Regeneration
-            danach. Die Kurse finden entweder vormittags oder nachmittags statt,
-            je nach Windvorhersage.
+            Tägliche Kurse in einer traumhaften Umgebung mit Blick aufs Meer.
+            Vor dem Kiten gibt es spezielle Yoga- und Mobility-Sessions, die
+            euch optimal auf das Kitesurfen vorbereiten. Higlights wie Sunrise
+            Yoga direkt am Strand sowie Sundowner Yoga auf der Dachterrasse
+            direkt bei der Kitestation. Erlebt dynamische Workouts und
+            DAYO-Sessions (Dance & Yoga) in einer inspirierenden Atmosphäre.
           </p>
         </div>
       </div>

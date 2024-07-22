@@ -48,7 +48,7 @@ const program: ProgramPoint[] = [
     icon: MdBreakfastDining,
   },
   {
-    text: "Bedounin Dinner*",
+    text: "Bedouin Dinner*",
     icon: MdDinnerDining,
   },
 ];
