@@ -44,11 +44,11 @@ const program: ProgramPoint[] = [
     icon: TbYoga,
   },
   {
-    text: "Atemberaubende Sunsettour mit DJ, kühlen Drinks und jeder Menge Spaß*",
+    text: "Atemberaubende Sunsettour mit DJ, kühlen Drinks und jeder Menge Spaß",
     icon: MdBreakfastDining,
   },
   {
-    text: "Bedouin Dinner direkt am Strand - geniesse bestes traditionelles Essen in einer wundervollen Atmosphäre wie in 1001 Nacht*",
+    text: "Bedouin Dinner direkt am Strand - geniesse bestes traditionelles Essen in einer wundervollen Atmosphäre wie in 1001 Nacht",
     icon: MdDinnerDining,
   },
 ];
@@ -81,7 +81,6 @@ const Program = () => {
             </Card>
           ))}
         </div>
-        <p className="text-sm my-2">*entgeltlich</p>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ import { Booking } from "./booking/booking";
 import { TbFileTypePdf } from "react-icons/tb";
 import { Button } from "./ui/button";
 const standardContent =
-  "Welcome Cocktail, Morning und Sunset Yoga, DAYO (Dance Yoga), Mobility, Faszientraining, Workouts,  kostenloser Shuttleservice zum Kitespot und zurück, 7 Nächte, Vollpension";
+  "Welcome Cocktail, Sunrise Yoga mit Sekt & Croissant, Sunset Yoga auf der Dachterasse, DAYO, Mobility- und Faszientraining, Workouts, Bedouin Dinner am Strand, Sunset Boot Tour mit DJ,  kostenloser Shuttleservice zum Kitespot und zurück, 7 Nächte, Vollpension";
 const content = [
   {
     title: "Early Bird",
@@ -160,7 +160,7 @@ const Packages = () => {
           </CardContent>
           <CardFooter className="flex-col items-center justify-center bg-pink-500/70 text-white p-5 gap-4">
             <div className="flex">
-              <p className="text-5xl font-semibold">860,70*</p>
+              <p className="text-5xl font-semibold">913,70*</p>
               <EuroIcon size={50} color="white" />
             </div>
             <div className="text-center">
@@ -178,7 +178,7 @@ const Packages = () => {
           <div className="flex p-5">
             <p className="mr-3">*</p>
             <div>
-              <p>Doppelzimmer zur Einzelnutzung 986,70 €</p>
+              <p>Doppelzimmer zur Einzelnutzung 1039,70 €</p>
             </div>
           </div>
         </Card>
@@ -209,7 +209,7 @@ const Packages = () => {
           </CardContent>
           <CardFooter className="flex-col items-center justify-center bg-pink-500/70 text-white p-5 gap-4">
             <div className="flex">
-              <p className="text-5xl font-semibold">798,40*</p>
+              <p className="text-5xl font-semibold">851,40*</p>
               <EuroIcon size={50} color="white" />
             </div>
             <div className="text-center">
@@ -226,7 +226,7 @@ const Packages = () => {
           <div className="flex p-5">
             <p className="mr-3">*</p>
             <div>
-              <p>Doppelzimmer zur Einzelnutzung 910,40 €</p>
+              <p>Doppelzimmer zur Einzelnutzung 963,40 €</p>
             </div>
           </div>
         </Card>
@@ -255,7 +255,7 @@ const Packages = () => {
           </CardContent>
           <CardFooter className="flex-col items-center justify-center bg-pink-500/70 text-white p-5 gap-4">
             <div className="flex">
-              <p className="text-5xl font-semibold">923,00*</p>
+              <p className="text-5xl font-semibold">976,00*</p>
               <EuroIcon size={50} color="white" />
             </div>
             <div className="text-center">
@@ -270,7 +270,7 @@ const Packages = () => {
           <div className="flex p-5">
             <p className="mr-3">*</p>
             <div>
-              <p>Doppelzimmer zur Einzelnutzung 1063,00 €</p>
+              <p>Doppelzimmer zur Einzelnutzung 1116,00 €</p>
             </div>
           </div>
         </Card>

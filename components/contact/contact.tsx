@@ -46,17 +46,23 @@ export default function Contact() {
           <div className="container w-full mt-10">
             <form className="flex flex-col gap-4" action={executeFormAction}>
               <Label htmlFor="name">Name</Label>
-              <Input type="text" />
+              <Input name="name" type="text" />
+              {error?.fieldErrors?.name && (
+                <p className="text-red-500">{error.fieldErrors.name}</p>
+              )}
               <Label htmlFor="email">Email</Label>
-              <Input type="text" />
+              {error?.fieldErrors?.email && (
+                <p className="text-red-500">{error.fieldErrors.email}</p>
+              )}
+              <Input name="email" type="text" />
               <Label htmlFor="message">Nachricht</Label>
-              <Textarea rows={10} />
+              {error?.fieldErrors?.message && (
+                <p className="text-red-500">{error.fieldErrors.message}</p>
+              )}
+              <Textarea name="message" rows={10} />
               <Button className="w-full" type="submit" disabled={isPending}>
-                Submit
+                {isPending ? "Sende..." : "Abschicken"}
               </Button>
-              {isPending && <div>Loading...</div>}
-              {isSuccess && <div>Success: {JSON.stringify(data)}</div>}
-              {isError && <div>Error: {JSON.stringify(error.fieldErrors)}</div>}
             </form>
             <div className="text-sm mt-4">
               <p>
