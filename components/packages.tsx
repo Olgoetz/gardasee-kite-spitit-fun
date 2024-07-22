@@ -16,7 +16,7 @@ import { Booking } from "./booking/booking";
 import { TbFileTypePdf } from "react-icons/tb";
 import { Button } from "./ui/button";
 const standardContent =
-  "Welcome Cocktail,Yoga, Mobility, Faszientraining,  kostenloser Shuttleservice zum Kitespot und zurück, 7 Nächte, Vollpension";
+  "Welcome Cocktail, Morning und Sunset Yoga, DAYO (Dance Yoga), Mobility, Faszientraining, Workouts,  kostenloser Shuttleservice zum Kitespot und zurück, 7 Nächte, Vollpension";
 const content = [
   {
     title: "Early Bird",
