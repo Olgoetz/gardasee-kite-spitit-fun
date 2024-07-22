@@ -32,15 +32,15 @@ const program: ProgramPoint[] = [
     icon: MdKitesurfing,
   },
   {
-    text: "Faszientraining zur Regeneration",
+    text: "Faszientraining zur Regeneration und Mobility-Sessions zur Vorbereitungs auf's Wasser",
     icon: AiFillHeart,
   },
   {
-    text: "Mobility Einheiten für die optimale Vorbereitung auf's Wasser",
+    text: "Workouts zur Kräfigung und Stabilisierung",
     icon: IoFitnessSharp,
   },
   {
-    text: "Morning Yoga Flow",
+    text: "Morning und Sunset Yoga sowie DAYO",
     icon: TbYoga,
   },
   {
