@@ -77,7 +77,7 @@ const Event = () => {
         </motion.div>
       </div>
       <div className="grid md:grid-cols-3 gap-8 w-full mt-16 h-[400px] md:justify-center">
-        <div className="md:col-span-1 w-full h-full flex flex-col text-center justify-between">
+        <div className="md:col-span-1 w-full p-4 h-full flex flex-col bg-slate-50 rounded-lg text-center justify-between">
           <div className="">
             <h3 className="text-4xl font-extrabold mb-3">Zeitraum</h3>
             <p className="text-2xl">17.05. - 24.05.2025</p>
@@ -94,14 +94,13 @@ const Event = () => {
           </div>
         </div>
         <div className="md:col-span-2 flex flex-col items-center">
-          <div className="bg-black w-full h-full relative overflow-hidden flex justify-center">
+          <div className="bg-white w-full h-full rounded-lg relative overflow-hidden flex justify-center">
             <Link href="https://kitehouse-somabay.com/">
               <Image
                 src="https://kitehouse-somabay.com/UP1/wp-content/uploads/A-dream-come-true.jpg"
                 alt="Kitehouse Soma Bay"
                 fill
-                className="object-cover "
-                color="white"
+                className="object-cover"
               />
             </Link>
           </div>
