@@ -319,7 +319,7 @@ const Packages = () => {
       <div className="flex items-center ">
         <p>
           Die Preise für den Verleih von Katmaterial, Storage und Kurse findest
-          du hier: "pdf hier"
+          du hier: pdf hier
         </p>
         <TbFileTypePdf size={30} className="text-pink-500" />
       </div>
