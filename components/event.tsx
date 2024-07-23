@@ -7,12 +7,12 @@ import Link from "next/link";
 const Event = () => {
   return (
     <div
-      className="container max-w-[1400px] my-20"
+      className="container max-w-[1400px] "
       //   style={{ ...springs }}
     >
       <h1
         id="event"
-        className="text-center font-bold text-2xl md:text-5xl  uppercase border-b pb-2  text-pink-500"
+        className="text-center font-bold text-2xl md:text-5xl pt-20  uppercase border-b pb-2  text-pink-500"
       >
         Event
       </h1>

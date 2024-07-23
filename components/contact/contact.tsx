@@ -12,7 +12,7 @@ import { useServerAction } from "zsa-react";
 import { sendContactMessage } from "./actions";
 import { Textarea } from "../ui/textarea";
 import { Label } from "@radix-ui/react-label";
-
+import ContactImg from "@/public/contact.jpg";
 function Submit() {
   const { pending } = useFormStatus();
 
@@ -36,8 +36,8 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 w-full h-full gap-4">
           <div className="h-[400px] md:h-full relative">
             <Image
-              src="/gardasee_action.jpg"
-              alt="Kitesurfen Gardasee"
+              src={ContactImg}
+              alt="Kamel"
               className="object-cover object-center rounded-lg"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
