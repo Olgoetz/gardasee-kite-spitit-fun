@@ -35,8 +35,8 @@ const Event = () => {
           className="flex relative h-[400px] items-center justify-center"
         >
           <Image
-            src="/kite.png"
-            alt="Kitesurfen Gardasee"
+            src="/kite_somabay.JPG"
+            alt="Kitesurfen SomaBay Ägypten"
             fill
             className="object-cover -z-10 rounded-lg"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -51,10 +51,10 @@ const Event = () => {
           className="flex relative h-[400px] items-center justify-center"
         >
           <Image
-            src="/fitness.jpg"
-            alt="Fitness Gardasee"
+            src="/workout_somabay.JPG"
+            alt="Fitness SomaBay Ägypten"
             fill
-            className="object-cover -z-10 rounded-lg"
+            className="object-cover object-left -z-10 rounded-lg"
           />
           <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
             Fitness
@@ -66,8 +66,8 @@ const Event = () => {
           className="flex relative h-[400px] items-center justify-center"
         >
           <Image
-            src="/fun.png"
-            alt="Spaß Gardasee"
+            src="/fun.JPG"
+            alt="Spaß SomaBay Ägypten"
             fill
             className="object-cover -z-10 rounded-lg"
           />
@@ -76,8 +76,9 @@ const Event = () => {
           </p>
         </motion.div>
       </div>
-      <div className="grid md:grid-cols-3 gap-8 w-full mt-16 h-[400px] md:justify-center">
-        <div className="md:col-span-1 w-full p-4 h-full flex flex-col bg-slate-50 rounded-lg text-center justify-between">
+
+      <div className="grid md:grid-cols-3 gap-8 w-full mt-16 h-full md:justify-center">
+        <div className="md:col-span-1 w-full p-4 space-y-4 h-full flex flex-col bg-slate-50 rounded-lg text-center justify-between">
           <div className="">
             <h3 className="text-4xl text-pink-500 font-extrabold mb-3">
               Zeitraum
@@ -99,14 +100,14 @@ const Event = () => {
             <p>7 Bft KiteHouse Soma Bay</p>
           </div>
         </div>
-        <div className="md:col-span-2 flex flex-col items-center">
-          <div className="bg-white w-full h-full rounded-lg relative overflow-hidden flex justify-center">
+        <div className="md:col-span-2 w-full h-full ">
+          <div className="bg-white  rounded-lg relative w-full h-[200px] md:h-[400px] ">
             <Link href="https://kitehouse-somabay.com/">
               <Image
                 src="https://kitehouse-somabay.com/UP1/wp-content/uploads/A-dream-come-true.jpg"
                 alt="Kitehouse Soma Bay"
                 fill
-                className="object-cover"
+                className="object-cover rounded-lg"
               />
             </Link>
           </div>

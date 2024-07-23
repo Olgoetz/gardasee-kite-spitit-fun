@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* <Video /> */}
       <Program />
-      <Speparator imageSrc="/gardasee_1.jpg" alt="Gardasee Yoga" />
+      <Speparator imageSrc="/background.jPG" alt="SomaBay Ägypten" />
       <Packages />
       <Aboutme />
       <Contact />

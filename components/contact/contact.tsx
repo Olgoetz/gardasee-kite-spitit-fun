@@ -28,7 +28,7 @@ export default function Contact() {
     useServerAction(sendContactMessage);
   return (
     <div className="bg-white">
-      <div id="anfrage" className="md:p-10 max-w-[1200px] mx-auto">
+      <div id="kontakt" className="md:p-10 max-w-[1200px] mx-auto">
         <h2 className="text-xl md:text-3xl uppercase text-pink-500 text-center font-bold my-10 border-b pb-2">
           So erreichst Du mich
         </h2>
