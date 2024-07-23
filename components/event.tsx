@@ -100,7 +100,7 @@ const Event = () => {
             <p>7 Bft KiteHouse Soma Bay</p>
           </div>
         </div>
-        <div className="md:col-span-2 w-full h-full ">
+        <div className="md:col-span-2 w-full h-full pb-12 ">
           <div className="bg-white  rounded-lg relative w-full h-[200px] md:h-[400px] ">
             <Link href="https://kitehouse-somabay.com/">
               <Image

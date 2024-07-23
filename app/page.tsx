@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* <Video /> */}
       <Program />
-      <Speparator imageSrc="/background.jPG" alt="SomaBay Ägypten" />
+      <Speparator imageSrc="/background.JPG" alt="SomaBay Ägypten" />
       <Packages />
       <Aboutme />
       <Contact />
