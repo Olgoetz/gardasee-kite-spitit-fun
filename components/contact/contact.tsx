@@ -13,19 +13,18 @@ import { sendContactMessage } from "./actions";
 import { Textarea } from "../ui/textarea";
 import { Label } from "@radix-ui/react-label";
 import ContactImg from "@/public/contact.jpg";
-function Submit() {
-  const { pending } = useFormStatus();
-
-  return (
-    <Button type="submit" className=" bg-pink-500">
-      {pending ? <BeatLoader color="white" /> : "Abschicken"}
-    </Button>
-  );
-}
+import { useRef } from "react";
+import { toast } from "sonner";
 
 export default function Contact() {
+  const fromRef = useRef<HTMLFormElement>(null);
   const { isPending, executeFormAction, isSuccess, data, isError, error } =
     useServerAction(sendContactMessage);
+
+  if (isSuccess) {
+    toast.success("Anfrage verschickt!");
+    fromRef.current?.reset();
+  }
   return (
     <div className="bg-white">
       <div id="kontakt" className="md:p-10 max-w-[1200px] mx-auto">
@@ -33,7 +32,7 @@ export default function Contact() {
           So erreichst Du mich
         </h2>
 
-        <div className="grid md:grid-cols-2 w-full h-full gap-4">
+        <div className="grid md:grid-cols-2 w-full h-full gap-4 ">
           <div className="h-[400px] md:h-full relative">
             <Image
               src={ContactImg}
@@ -43,8 +42,12 @@ export default function Contact() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="container w-full mt-10">
-            <form className="flex flex-col gap-4" action={executeFormAction}>
+          <div className="container w-full h-full ">
+            <form
+              ref={fromRef}
+              className="flex flex-col gap-4"
+              action={executeFormAction}
+            >
               <Label htmlFor="name">Name</Label>
               <Input name="name" type="text" />
               {error?.fieldErrors?.name && (

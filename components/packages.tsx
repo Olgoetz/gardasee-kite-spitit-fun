@@ -179,10 +179,7 @@ const Packages = () => {
               <p>zzgl. Kitematerial/-kurs</p>
             </div>
             <div className="my-4">
-              {" "}
-              <div className="my-4">
-                <Button size="lg">Buchungsanfrage</Button>
-              </div>
+              <Booking package_name={"Early Bird"} />
             </div>
           </CardFooter>
           <div className="flex p-5">
@@ -231,7 +228,10 @@ const Packages = () => {
             </div>
             <div className="my-4">
               <div className="my-4">
-                <Button size="lg">Buchungsanfrage</Button>
+                <Booking
+                  package_name={"Super Early Bird"}
+                  styles="bg-pink-500 font-bold text-white"
+                />
               </div>
             </div>
           </CardFooter>
@@ -276,7 +276,8 @@ const Packages = () => {
               <p>zzgl. Kitematerial/-kurs</p>
             </div>
             <div className="my-4">
-              <Button size="lg">Buchungsanfrage</Button>
+              <Booking package_name={"Regular"} />
+              {/* <Button size="lg">Buchungsanfrage</Button> */}
             </div>
           </CardFooter>
           <div className="flex p-5">

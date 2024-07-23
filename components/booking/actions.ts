@@ -3,9 +3,9 @@
 import z from "zod";
 import { createServerAction } from "zsa";
 
-import { contactFormSchema } from "./validations";
-export const sendContactMessage = createServerAction()
-  .input(contactFormSchema, {
+import { bookingFormSchema } from "./validations";
+export const sendBookingInquiry = createServerAction()
+  .input(bookingFormSchema, {
     type: "formData",
   })
   .handler(async ({ input }) => {
