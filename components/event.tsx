@@ -51,7 +51,7 @@ const Event = () => {
           className="flex relative h-[400px] items-center justify-center"
         >
           <Image
-            src="/workout_somabay.JPG"
+            src="/workout_somabay.jpg"
             alt="Fitness SomaBay Ägypten"
             fill
             className="object-cover object-left -z-10 rounded-lg"
