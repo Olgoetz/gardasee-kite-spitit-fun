@@ -9,7 +9,7 @@ export const bookingFormSchema = z
       .string()
       .email({ message: "Bitte gib eine gültige Email-Adresse an" }),
 
-    numberOfPersons: z.coerce.number(),
+    numberOfPersons: z.coerce.number().default(1),
     wantKite: z.coerce.boolean(),
     kiteLevel: z.coerce.string().optional(),
   })
