@@ -10,7 +10,7 @@ export const bookingFormSchema = z
       .email({ message: "Bitte gib eine gültige Email-Adresse an" }),
 
     numberOfPersons: z.coerce.number().default(1),
-    wantKite: z.coerce.boolean(),
+    wantKite: z.string().optional(),
     kiteLevel: z.coerce.string().optional(),
   })
   .refine(
@@ -27,3 +27,6 @@ export const bookingFormSchema = z
       path: ["kiteLevel"],
     }
   );
+
+// Extract the TypeScript type from the schema
+export type BookingFormData = z.infer<typeof bookingFormSchema>;

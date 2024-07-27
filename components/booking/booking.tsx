@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { BeatLoader } from "react-spinners";
@@ -31,6 +31,7 @@ import { sendBookingInquiry } from "./actions";
 import { useServerAction } from "zsa-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import { set } from "zod";
 
 export function Booking({
   package_name,
@@ -46,37 +47,44 @@ export function Booking({
     setWantKite(!wantKite);
   };
 
-  const { isPending, execute, isSuccess, data, isError, error } =
+  const { isPending, isError, executeFormAction, error, isSuccess } =
     useServerAction(sendBookingInquiry, {
       bind: {
         packageName: package_name,
       },
+
+      onError: ({ err }) => {
+        console.log(err);
+        if (err.code !== "INPUT_PARSE_ERROR") {
+          toast.error(
+            "Fehler beim Senden der Anfrage. Versuche es später erneut."
+          );
+        }
+      },
+      onSuccess: () => {
+        toast.success("Anfrage verschickt!");
+        setOpen(false);
+      },
     });
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   const form = e.currentTarget;
 
-    const formData = new FormData(form);
-    const [data, err] = await execute(formData);
+  //   const formData = new FormData(form);
+  //   const [data, err] = await execute(formData);
 
-    if (err) {
-      toast.error("Bitte fehler prüfen!");
-      return;
-    }
-
-    setOpen(false);
-    toast.success("Anfrage verschickt!");
-    form.reset();
-  };
-
-  // Use useEffect to handle the success state
-  // useEffect(() => {
-  //   if (isSuccess) {
-  //     setOpen(false);
-  //     toast.success("Anfrage verschickt!");
+  //   if (err) {
+  //     toast.error("Bitte fehler prüfen!");
+  //     return;
   //   }
-  // }, [isSuccess]);
+
+  //   setOpen(false);
+  //   setWantKite(false);
+  //   toast.success("Anfrage verschickt!");
+  //   form.reset();
+  // };
+
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
@@ -90,7 +98,7 @@ export function Booking({
         </Button>
       </DialogTrigger>
       <DialogContent className="max-w-[500px]">
-        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+        <form className="flex flex-col gap-4" action={executeFormAction}>
           <Label htmlFor="packageName">Paket</Label>
           <Input readOnly name="packageName" disabled value={package_name} />
           <Label htmlFor="name">Name</Label>

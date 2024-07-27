@@ -77,7 +77,7 @@ const Event = () => {
         </motion.div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 w-full mt-16 h-full md:justify-center">
+      <div className="grid md:grid-cols-3 gap-8 w-full my-16 h-full md:justify-center items-center">
         <div className="md:col-span-1 w-full p-4 space-y-4 h-full flex flex-col bg-slate-50 rounded-lg text-center justify-between">
           <div className="">
             <h3 className="text-4xl text-pink-500 font-extrabold mb-3">
@@ -100,8 +100,8 @@ const Event = () => {
             <p>7 Bft KiteHouse Soma Bay</p>
           </div>
         </div>
-        <div className="md:col-span-2 w-full h-full pb-12 ">
-          <div className="bg-white  rounded-lg relative w-full h-[200px] md:h-[400px] ">
+        <div className="md:col-span-2 w-full h-full ">
+          <div className="bg-white  rounded-lg relative h-[200px] md:h-full ">
             <Link href="https://kitehouse-somabay.com/">
               <Image
                 src="https://kitehouse-somabay.com/UP1/wp-content/uploads/A-dream-come-true.jpg"

@@ -1,19 +1,15 @@
 import * as React from "react";
 
 import { Html, Body, Container, Tailwind } from "@react-email/components";
+import { BookingFormData } from "./validations";
 
-interface EmailTemplateProps {
-  name: string;
-  email: string;
-  paket: string;
-  room: string;
-}
-
-export const BookingEmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+export const BookingEmailTemplate: React.FC<Readonly<BookingFormData>> = ({
   name,
   email,
-  paket,
-  room,
+  packageName: paket,
+  numberOfPersons,
+  wantKite,
+  kiteLevel,
 }) => {
   return (
     <Html>
@@ -25,7 +21,15 @@ export const BookingEmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
               <p className="">Name : {name} </p>
               <p className="">Email-Adresse: {email} </p>
               <p className="">Paket : {paket} </p>
-              <p className="">Zimmerwunsch : {room} </p>
+              <p className="">Anzahl Personen : {numberOfPersons} </p>
+              {wantKite ? (
+                <>
+                  <p>Kitesurfen: ja</p>
+                  <p>Level: {kiteLevel}</p>
+                </>
+              ) : (
+                <p>Kitesurfen: nein</p>
+              )}
             </div>
           </Container>
         </Body>

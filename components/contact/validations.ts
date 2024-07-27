@@ -11,3 +11,6 @@ export const contactFormSchema = z.object({
     message: "Bitte gib eine Nachricht mit mindestens 10 Zeichen ein",
   }),
 });
+
+// Extract the TypeScript type from the schema
+export type ContactFormData = z.infer<typeof contactFormSchema>;

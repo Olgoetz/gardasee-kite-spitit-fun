@@ -1,10 +1,8 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 
-import BeatLoader from "react-spinners/BeatLoader";
 import { Button } from "@/components/ui/button";
 
 import { Input } from "@/components/ui/input";
@@ -18,13 +16,21 @@ import { toast } from "sonner";
 
 export default function Contact() {
   const fromRef = useRef<HTMLFormElement>(null);
-  const { isPending, executeFormAction, isSuccess, data, isError, error } =
-    useServerAction(sendContactMessage);
+  const { isPending, executeFormAction, error } = useServerAction(
+    sendContactMessage,
+    {
+      onError: () => {
+        toast.error(
+          "Fehler beim Senden der Anfrage. Versuche es später erneut."
+        );
+      },
+      onSuccess: () => {
+        toast.success("Nachricht verschickt!");
+        fromRef.current?.reset();
+      },
+    }
+  );
 
-  if (isSuccess) {
-    toast.success("Anfrage verschickt!");
-    fromRef.current?.reset();
-  }
   return (
     <div className="bg-white">
       <div id="kontakt" className="md:p-10 max-w-[1200px] mx-auto">
@@ -73,7 +79,7 @@ export default function Contact() {
                 Frage genutzt. Weitere Informationen findest Du in den{" "}
                 <Link
                   className="text-pink-500"
-                  href="/datenschutz"
+                  href="https://www.michaela-suessbauer.de/datenschutz.html"
                   target="_blank"
                 >
                   Datenschutzhinweisen.
