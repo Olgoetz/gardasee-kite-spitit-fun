@@ -6,7 +6,7 @@ import { BookingFormData } from "./validations";
 export const BookingEmailTemplate: React.FC<Readonly<BookingFormData>> = ({
   name,
   email,
-  packageName: paket,
+  packageName,
   numberOfPersons,
   wantKite,
   kiteLevel,
@@ -20,7 +20,7 @@ export const BookingEmailTemplate: React.FC<Readonly<BookingFormData>> = ({
             <div className="mt-8 space-y-4">
               <p className="">Name : {name} </p>
               <p className="">Email-Adresse: {email} </p>
-              <p className="">Paket : {paket} </p>
+              <p className="">Paket : {packageName} </p>
               <p className="">Anzahl Personen : {numberOfPersons} </p>
               {wantKite ? (
                 <>
