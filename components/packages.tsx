@@ -16,6 +16,7 @@ import { Booking } from "./booking/booking";
 import { TbFileTypePdf } from "react-icons/tb";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 const standardContent =
   "Welcome Cocktail, Sunrise Yoga mit Sekt & Croissant, Sunset Yoga auf der Dachterasse, DAYO, Mobility- und Faszientraining, Workouts, Bedouin Dinner am Strand, Sunset Boot Tour mit DJ,  kostenloser Shuttleservice zum Kitespot und zurück, 7 Nächte, Vollpension";
 const content = [
@@ -335,11 +336,20 @@ const Packages = () => {
       <div className="flex items-center ">
         <p>
           Die Preise für den Verleih von Katmaterial, Storage und Kurse findest
-          du hier: pdf hier
+          du hier:
         </p>
-        <TbFileTypePdf size={30} className="text-pink-500" />
+        <Link
+          href="/Fact Sheet 7 Bft KiteHouse - winter 2024-25.pdf"
+          passHref
+          target="_blank"
+        >
+          <TbFileTypePdf size={30} className="text-pink-500 ml-3" />
+        </Link>
       </div>
-      <p>Auf die gelisteten Preise bekommst du 15% Rabatt!</p>
+      <p>
+        Auf die gelisteten Preise bekommst du{" "}
+        <span className="font-bold text-lg">15% </span>Rabatt!
+      </p>
     </div>
   );
 };
