@@ -41,6 +41,7 @@ const Aboutme = () => {
             style={{ objectFit: "cover" }}
             src="/kitesurfen.jpg"
             alt="Kitesurfen"
+            className="rounded-lg"
           />
         </div>
       </div>

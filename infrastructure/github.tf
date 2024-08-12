@@ -3,7 +3,7 @@
 provider "github" {}
 
 resource "github_repository" "this" {
-  name        = "gardasee-kite-spirit-fun"
+  name        = "kite-spirit-fun"
   description = "Codebase for a simple landing page based on Next.js and Tailwind CSS"
 
   visibility = "public"

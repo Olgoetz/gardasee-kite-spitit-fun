@@ -28,8 +28,8 @@ const links = [
     link: "#uebermich",
   },
   {
-    label: "Anfrage",
-    link: "#anfrage",
+    label: "Kontakt",
+    link: "#kontakt",
   },
 ];
 

@@ -7,6 +7,7 @@ import Hero from "@/components/hero";
 import Packages from "@/components/packages";
 import Program from "@/components/program";
 import Speparator from "@/components/separator";
+import { Toaster } from "@/components/ui/sonner";
 
 import Video from "@/components/video";
 export default function Home() {
@@ -16,12 +17,13 @@ export default function Home() {
       <Hero />
       <Event />
 
-      <Video />
+      {/* <Video /> */}
       <Program />
-      <Speparator imageSrc="/gardasee_1.jpg" alt="Gardasee Yoga" />
+      <Speparator imageSrc="/background.JPG" alt="SomaBay Ägypten" />
       <Packages />
       <Aboutme />
       <Contact />
+      <Toaster />
     </main>
   );
 }

@@ -14,7 +14,11 @@ import { AiFillHeart } from "react-icons/ai";
 import { TbYoga } from "react-icons/tb";
 import { IoFitnessSharp } from "react-icons/io5";
 import { FaPizzaSlice } from "react-icons/fa6";
-import { MdBreakfastDining, MdKitesurfing } from "react-icons/md";
+import {
+  MdBreakfastDining,
+  MdDinnerDining,
+  MdKitesurfing,
+} from "react-icons/md";
 import { LucideIcon } from "lucide-react";
 
 type ProgramPoint = {
@@ -24,28 +28,29 @@ type ProgramPoint = {
 
 const program: ProgramPoint[] = [
   {
-    text: "Täglich Kitekurse für Anfänger und Fortgeschrittene sowie Ausfahrten",
+    text: `Täglich Kitekurse für Anfänger und Fortgeschrittene*\n
+    Wir rechnen nicht damit, aber falls es passieren sollte - einzigartige No Wind Solutions`,
     icon: MdKitesurfing,
   },
   {
-    text: "Faszientraining zur Regeneration",
+    text: "Yoga, Mobility und Faszientraining zur Regeneration sowie zur optimalen Vorbereitung auf´s Wasser",
     icon: AiFillHeart,
   },
   {
-    text: "Mobility Einheiten für die optimale Vorbereitung auf's Wasser",
+    text: "Highlights: DAYO, Dance & Workout Specials",
     icon: IoFitnessSharp,
   },
   {
-    text: "Morning Yoga Flow",
+    text: "Sunrise Yoga am Strand sowie Sundowner Yoga auf der Dachterasse",
     icon: TbYoga,
   },
   {
-    text: "Gemeinsames Frühstück und Abendessen",
+    text: "Atemberaubende Sunsettour mit DJ, kühlen Drinks und jeder Menge Spaß",
     icon: MdBreakfastDining,
   },
   {
-    text: "Pizza Abend in Torri",
-    icon: FaPizzaSlice,
+    text: "Bedouin Dinner direkt am Strand - geniesse bestes traditionelles Essen in einer wundervollen Atmosphäre wie in 1001 Nacht",
+    icon: MdDinnerDining,
   },
 ];
 
@@ -57,22 +62,22 @@ const Program = () => {
           Programm
         </h2>
         <p className="p-4 text-center text-lg">
-          Ich habe für euch ein tolles Programm zusammen gestellt,
-          welches viel Abwechslung bietet und Spaß garantiert.
+          Ich habe für euch ein tolles Programm zusammen gestellt, welches viel
+          Abwechslung bietet und Spaß garantiert
         </p>
         <div className="grid md:grid-cols-3 gap-4 items-center justify-between">
           {program.map((el) => (
             <Card
               key={el.text}
-              className="text-center h-[200px] bg-black text-white  border-white items-center"
+              className="text-center h-full bg-black text-white  border-white items-center"
             >
               <CardHeader className="items-center">
                 <el.icon size={48} color="white" />
                 {/* <CardTitle> </CardTitle> */}
                 {/* <CardDescription>Card Description</CardDescription> */}
               </CardHeader>
-              <CardContent>
-                <p className="">{el.text}</p>
+              <CardContent className="">
+                <p className="whitespace-pre-line">{el.text}</p>
               </CardContent>
             </Card>
           ))}

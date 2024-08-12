@@ -3,7 +3,7 @@ resource "vercel_project" "this" {
   name      = github_repository.this.name
   framework = "nextjs"
 
-
+  preview_comments           = false
   serverless_function_region = "fra1"
   git_repository = {
     type              = "github"
@@ -25,12 +25,7 @@ resource "vercel_project_domain" "prod" {
 }
 
 
-resource "vercel_project_environment_variable" "google" {
-  project_id = vercel_project.this.id
-  key        = "NEXT_PUBLIC_GOOGLE_API_KEY"
-  value      = var.NEXT_PUBLIC_GOOGLE_API_KEY
-  target     = ["production", "preview", "development"]
-}
+
 
 resource "vercel_project_environment_variable" "resend_key" {
   project_id = vercel_project.this.id
@@ -48,7 +43,13 @@ resource "vercel_project_environment_variable" "resend_to_booking" {
   project_id = vercel_project.this.id
   key        = "RESEND_TO_EMAIL_BOOKING"
   value      = var.RESEND_TO_EMAIL_BOOKING
-  target     = ["production", "preview", "development"]
+  target     = ["preview", "development"]
+}
+resource "vercel_project_environment_variable" "resend_to_booking_prod" {
+  project_id = vercel_project.this.id
+  key        = "RESEND_TO_EMAIL_BOOKING"
+  value      = var.RESEND_TO_EMAIL_BOOKING_PROD
+  target     = ["production"]
 }
 resource "vercel_project_environment_variable" "resend_to_event" {
   project_id = vercel_project.this.id
