@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import GoogleMaps from "./googleMaps";
 import Link from "next/link";
 const Event = () => {
   return (
