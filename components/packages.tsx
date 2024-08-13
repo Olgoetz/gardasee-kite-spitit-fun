@@ -333,20 +333,22 @@ const Packages = () => {
       <h3 className="text-2xl text-pink-500 pt-10 mt-10 pb-10">
         Preisliste für Verleih, Storage und Kurse
       </h3>
-      <div className="flex items-center ">
+      <div className="flex items-center flex-col md:flex-row space-y-4 md:space-y-0">
         <p>
           Die Preise für den Verleih von Katmaterial, Storage und Kurse findest
           du hier:
         </p>
-        <Link
-          href="/Fact Sheet 7 Bft KiteHouse - winter 2024-25.pdf"
-          passHref
-          target="_blank"
-        >
-          <TbFileTypePdf size={30} className="text-pink-500 ml-3" />
-        </Link>
+        <div>
+          <Link
+            href="/Fact Sheet 7 Bft KiteHouse - winter 2024-25.pdf"
+            passHref
+            target="_blank"
+          >
+            <TbFileTypePdf size={50} className="text-pink-500 ml-3" />
+          </Link>
+        </div>
       </div>
-      <p>
+      <p className="pt-4">
         Auf die gelisteten Preise bekommst du{" "}
         <span className="font-bold text-lg">15% </span>Rabatt!
       </p>

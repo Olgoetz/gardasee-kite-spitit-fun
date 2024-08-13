@@ -24,7 +24,7 @@ export const sendBookingInquiry = createServerAction()
     try {
       await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL as string,
-        to: process.env.RESEND_TO_EMAIL_EVENT as string,
+        to: [process.env.RESEND_TO_EMAIL_EVENT as string],
         cc: process.env.RESEND_CC_EMAIL_BOOKING as string,
         subject: "Kite Spirit Fun Camp 2025: Neue Buchungsanfrage",
         react: BookingEmailTemplate({

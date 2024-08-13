@@ -38,7 +38,7 @@ export default function Contact() {
           So erreichst Du mich
         </h2>
 
-        <div className="grid md:grid-cols-2 w-full h-full gap-4 ">
+        <div className="container grid md:grid-cols-2 w-full h-full gap-4 ">
           <div className="h-[400px] md:h-full relative">
             <Image
               src={ContactImg}
@@ -48,7 +48,7 @@ export default function Contact() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="container w-full h-full ">
+          <div className=" w-full h-full ">
             <form
               ref={fromRef}
               className="flex flex-col gap-4"
