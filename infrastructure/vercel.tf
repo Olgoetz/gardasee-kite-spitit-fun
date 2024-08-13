@@ -21,6 +21,13 @@ resource "vercel_project" "this" {
 resource "vercel_project_domain" "prod" {
   project_id = vercel_project.this.id
   domain     = split("https://", var.URL)[1]
+  redirect = vercel_project_domain.prod_https.domain
+  redirect_status_code = 308
+
+}
+resource "vercel_project_domain" "prod_https" {
+  project_id = vercel_project.this.id
+  domain     = "www.${split("https://", var.URL)[1]}"
 
 }
 
