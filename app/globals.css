@@ -8,9 +8,11 @@ html {
 body {
   overflow-x: visible;
 }
-input {
-  font-size: 1rem;
+input,
+textarea {
+  font-size: 1rem !important;
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
