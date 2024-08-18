@@ -6,6 +6,9 @@ import { createServerAction } from "zsa";
 import { bookingFormSchema } from "./validations";
 import { resend } from "@/lib/resend";
 import { BookingEmailTemplate } from "./email-template";
+
+const senderEmail: string = process.env.RESEND_FROM_EMAIL as string;
+
 export const sendBookingInquiry = createServerAction()
   .input(bookingFormSchema, {
     type: "formData",
@@ -23,7 +26,7 @@ export const sendBookingInquiry = createServerAction()
     console.log("input", input);
     try {
       await resend.emails.send({
-        from: process.env.RESEND_FROM_EMAIL as string,
+        from: `M. Suessbauer <${senderEmail}>`,
         to: [process.env.RESEND_TO_EMAIL_BOOKING as string],
         cc: process.env.RESEND_TO_EMAIL_EVENT as string,
         subject: "Kite Spirit Fun Camp 2025: Neue Buchungsanfrage",

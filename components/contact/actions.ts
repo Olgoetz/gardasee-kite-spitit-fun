@@ -6,6 +6,9 @@ import { createServerAction } from "zsa";
 import { contactFormSchema } from "./validations";
 import ContactFormEmailTemplate from "./email-template";
 import { resend } from "@/lib/resend";
+
+const senderEmail: string = process.env.RESEND_FROM_EMAIL as string;
+
 export const sendContactMessage = createServerAction()
   .input(contactFormSchema, {
     type: "formData",
@@ -14,7 +17,7 @@ export const sendContactMessage = createServerAction()
     console.log("input", input);
     try {
       await resend.emails.send({
-        from: process.env.RESEND_FROM_EMAIL as string,
+        from: `M. Suessbauer <${senderEmail}>`,
         to: process.env.RESEND_TO_EMAIL_EVENT as string,
         subject: "Kite Spirit Fun Camp 2025: Anfrage über das Kontaktformular",
         react: ContactFormEmailTemplate({
