@@ -32,7 +32,7 @@ const Aboutme = () => {
             &quot;life-changing&quot; Camps. Ich selbst bin seit Jahren
             leidenschaftliche Kiterin und freue mich, wenn ich das mit vielen
             teilen kann. Anfänger und Fortgeschrittene sind herzlich willkommen.
-            Ich und auch Beekite freuen sich auf DICH.
+            Ich und auch das Breakers freuen sich auf DICH.
           </p>
         </div>
         <div className="h-[400px] md:h-full relative">
