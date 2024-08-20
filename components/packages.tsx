@@ -18,7 +18,7 @@ import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 const standardContent =
-  "Welcome Cocktail, Sunrise Yoga mit Sekt & Croissant, Sunset Yoga auf der Dachterasse, DAYO, Mobility- und Faszientraining, Workouts, Bedouin Dinner am Strand, Sunset Boot Tour mit DJ,  kostenloser Shuttleservice zum Kitespot und zurück, 7 Nächte, Vollpension";
+  "Welcome Cocktail, Sunrise Yoga mit Sekt & Croissant, Sunset Yoga auf der Dachterasse, DAYO, Mobility- und Faszientraining, Workouts, Bedouin Dinner am Strand, Sunset Boot Tour mit DJ, kostenloser Shuttleservice zum Kitespot und zurück, 7 Nächte, Halbpension, unbegrenzt Trinkwasser";
 const content = [
   {
     title: "Early Bird",
