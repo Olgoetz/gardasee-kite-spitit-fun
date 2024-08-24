@@ -89,7 +89,7 @@ const Event = () => {
               Preis
             </h3>
             <p className="text-2xl">
-              ab 923 EUR plus Anreise und Geräteverleih
+              ab 851,40 EUR plus Anreise und Geräteverleih
             </p>
           </div>
           <div>
